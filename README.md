@@ -9,7 +9,7 @@
 
 
 
-## Popis hardware použitého při porjektu
+## Popis hardware použitého při projektu
 
 * Arduino UNO
 
