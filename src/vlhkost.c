@@ -1,0 +1,72 @@
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include "timer.h"
+#include "uart.h"
+ 
+#ifndef F_CPU
+# define F_CPU 16000000  // CPU frequency in Hz required for UART_BAUD_SELECT
+#endif
+ 
+#define ANALOG_IN 0 // ADC kanál 0 (odpovídá pinu PC0)
+ 
+// Kalibrační hodnoty vlhkosti
+int maxHodnota = 0;
+int minHodnota = 1024;
+ 
+// Prototypy funkcí
+void ADC_init(void);
+int analogRead(uint8_t channel);
+int nactiVlhkost(void);
+int map(int x, int in_min, int in_max, int out_min, int out_max);
+ 
+int main(void) {
+    // Inicializace periferií
+    ADC_init(); // Inicializace ADC
+    uart_init(UART_BAUD_SELECT(9600, F_CPU)); // Inicializace UARTu
+    TIM1_ovf_4sec(); // Nastavení časovače na 4 sekundy
+    TIM1_ovf_enable(); // Povolení přerušení časovače
+    sei(); // Povolení globálních přerušení
+ 
+    char string[10];
+ 
+    while (1) {
+        int vlhkost = nactiVlhkost(); // Načtení hodnoty vlhkosti
+ 
+        // Vypisování hodnot do UART
+        uart_puts("Vlhkost: ");
+        itoa(vlhkost, string, 10);
+        uart_puts(string);
+        uart_puts(" %\n");
+ 
+        _delay_ms(1000); // Zpoždění 1 sekundy
+    }
+ 
+    return 0;
+}
+ 
+// Inicializace ADC
+void ADC_init(void) {
+    ADMUX = (1 << REFS0); // Nastavení referenčního napětí na AVCC
+    ADCSRA = (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1); // Povolení ADC, dělič 64
+}
+ 
+// Čtení analogové hodnoty z ADC
+int analogRead(uint8_t channel) {
+    ADMUX = (ADMUX & 0xF0) | (channel & 0x0F); // Vybrání ADC kanálu
+    ADCSRA |= (1 << ADSC); // Zahájení převodu
+    while (ADCSRA & (1 << ADSC)); // Čekání na dokončení převodu
+    return ADC;
+}
+ 
+// Přemapování hodnot
+int map(int x, int in_min, int in_max, int out_min, int out_max) {
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+ 
+// Funkce pro načtení vlhkosti
+int nactiVlhkost(void) {
+    int namerenaHodnota = analogRead(ANALOG_IN); // Čtení hodnoty z ADC
+    int vlhkost = map(namerenaHodnota, minHodnota, maxHodnota, 0, 100); // Přemapování do rozsahu 0–100
+    return vlhkost;
+}
