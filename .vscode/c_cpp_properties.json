@@ -1,0 +1,68 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/include",
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/src",
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/uart",
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/oled",
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/twi",
+                "/Users/honza/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "/Users/honza/.platformio/packages/framework-arduino-avr/variants/standard",
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/button_adc",
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/gpio",
+                "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/lcd",
+                "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/include",
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/src",
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/uart",
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/oled",
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/twi",
+                    "/Users/honza/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "/Users/honza/.platformio/packages/framework-arduino-avr/variants/standard",
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/button_adc",
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/gpio",
+                    "/Users/honza/Desktop/Schule /Pátej semestr/DE2/projekt_de2/DE_2_projekt/lib/lcd",
+                    "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "/Users/honza/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60116",
+                "ARDUINO_AVR_UNO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "/Users/honza/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
