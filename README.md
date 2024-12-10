@@ -39,7 +39,7 @@ Senzor pracuje s napájecím napětím 3,3–5 V a poskytuje analogový výstup,
 ### Klávesnice
 ![klavesnice](images/klavesnice.png)
 
-Analogová klávesnice, jako je AD Keypad 5-bit, je kompaktní modul umožňující detekci více tlačítek pomocí jediného analogového vstupu. Tlačítka jsou zapojena do rezistorového děliče, což umožňuje generovat odlišné napěťové úrovně pro každé stisknutí. Analogová hodnota na výstupu odpovídá konkrétnímu tlačítku, což usnadňuje programování a integraci do projektů.
+Analogová klávesnice je kompaktní modul umožňující detekci více tlačítek pomocí jediného analogového vstupu. Tlačítka jsou zapojena do rezistorového děliče, což umožňuje generovat odlišné napěťové úrovně pro každé stisknutí. Analogová hodnota na výstupu odpovídá konkrétnímu tlačítku, což usnadňuje programování a integraci do projektů.
 
 Klávesnice je ideální pro jednoduchá uživatelská rozhraní v různých projektech. Díky úspoře pinů je vhodná i pro zařízení s omezeným počtem vstupů.
 
