@@ -36,21 +36,13 @@ Půdní analogový vlhkoměr s antikorozní sondou je jednoduchý a efektivní s
 
 Senzor pracuje s napájecím napětím 3,3–5 V a poskytuje analogový výstup, který lze snadno číst pomocí mikrokontroléru, jako je Arduino. Hodnota na výstupu odpovídá úrovni vlhkosti půdy, což umožňuje například automatické zavlažování nebo monitorování rostlin. Uplatní se v projektech, jako jsou chytré zahrady, skleníky nebo zemědělské aplikace.
 
-### Klávesnice
-![klavesnice](images/klavesnice.png)
+### DHT 11
 
-Analogová klávesnice je kompaktní modul umožňující detekci více tlačítek pomocí jediného analogového vstupu. Tlačítka jsou zapojena do rezistorového děliče, což umožňuje generovat odlišné napěťové úrovně pro každé stisknutí. Analogová hodnota na výstupu odpovídá konkrétnímu tlačítku, což usnadňuje programování a integraci do projektů.
-
-Klávesnice je ideální pro jednoduchá uživatelská rozhraní v různých projektech. Díky úspoře pinů je vhodná i pro zařízení s omezeným počtem vstupů.
-
-### DHT12
-![dht12](images/dht.png)
-
-DHT12 je digitální senzor pro měření teploty a vlhkosti s podporou I2C rozhraní. Nabízí přesnost ±0,5 °C u teploty a ±5 % u vlhkosti.Pracuje s napětím 2,7–5,5 V a díky I2C šetří piny mikrokontroléru. Je kompatibilní s Arduinem a dalšími platformami, přičemž podporuje i jednožilové datové rozhraní.
-
+![dht](images/dht.png)
+DHT11 je základní digitální senzor pro měření teploty a vlhkosti. Nabízí přesnost ±2 °C u teploty a ±5 % u vlhkosti. Pracuje s napětím 3,3–5 V a komunikuje přes jednožilové datové rozhraní.
 
 
 ## Popis software
-
+K ovládání slouží tři tlačítka. Jedno 
 
 ## Ovládání
