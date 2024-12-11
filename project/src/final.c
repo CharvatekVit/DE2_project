@@ -1,11 +1,3 @@
-/***********************************************************************
- * 
- * Program with "Set Mode" interface for adjusting soil moisture and temperature.
- * LEDs for watering, drying, heating, and cooling.
- * DHT12 sensor for air temperature and humidity.
- * 
- **********************************************************************/
-
 /* Defines -----------------------------------------------------------*/
 // Pin definitions for buttons
 #define BUTTON_PIN 1       // Button for switching modes
@@ -208,10 +200,6 @@ uint8_t readDHT12(void) {
     uint8_t sum = dht12.hum_int + dht12.hum_dec + dht12.temp_int + dht12.temp_dec;
     return (sum == dht12.checksum);
 }
-
-
-
-
 
 /* Initialize ADC for analog reading ---------------------------------*/
 void ADC_init(void) {
