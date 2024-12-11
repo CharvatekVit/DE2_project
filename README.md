@@ -36,11 +36,11 @@ Půdní analogový vlhkoměr s antikorozní sondou je jednoduchý a efektivní s
 
 Senzor pracuje s napájecím napětím 3,3–5 V a poskytuje analogový výstup, který lze snadno číst pomocí mikrokontroléru, jako je Arduino. Hodnota na výstupu odpovídá úrovni vlhkosti půdy, což umožňuje například automatické zavlažování nebo monitorování rostlin. Uplatní se v projektech, jako jsou chytré zahrady, skleníky nebo zemědělské aplikace.
 
-### DHT 11
+### DHT 12
 
 ![dht](images/dht.png)
 
-DHT11 je základní digitální senzor pro měření teploty a vlhkosti. Nabízí přesnost ±2 °C u teploty a ±5 % u vlhkosti. Pracuje s napětím 3,3–5 V a komunikuje přes jednožilové datové rozhraní.
+DHT12 je základní digitální senzor pro měření teploty a vlhkosti. Nabízí přesnost ±2 °C u teploty a ±5 % u vlhkosti. Pracuje s napětím 3,3–5 V a komunikuje přes SPI sběrnici.
 
 
 ## Ovládání
