@@ -46,4 +46,9 @@ DHT11 je základní digitální senzor pro měření teploty a vlhkosti. Nabíz�
 ## Ovládání
 K ovládání slouží tři tlačítka. Jedno tlačítko přepíná mezi ovládadnou hodnotu, další dvě slouží k nastavení požadované hodnoty. Na displeji se zobrazuje současná teplota ovzduší a vlhkost půdy. Následně mikrokontorler vyhodnotí zda současné podmínky vyhovují podmínkám nastaveným a pokud ne, snaží se dosáhnout hodnot definovaných uživatelem. Pro signalizaci vytápění slouží červená LED, pro chlazení modrá , pro větrání žlutá  a pro zavlažování zelená.
 
+## Schéma zapojení
+
+![schema](images/schema.png)
+
+
 
