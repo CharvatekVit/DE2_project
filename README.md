@@ -42,7 +42,7 @@ Senzor pracuje s napájecím napětím 3,3–5 V a poskytuje analogový výstup,
 DHT11 je základní digitální senzor pro měření teploty a vlhkosti. Nabízí přesnost ±2 °C u teploty a ±5 % u vlhkosti. Pracuje s napětím 3,3–5 V a komunikuje přes jednožilové datové rozhraní.
 
 
-## Popis software
-K ovládání slouží tři tlačítka. Jedno 
+## Ovládání
+K ovládání slouží tři tlačítka. Jedno tlačítko přepíná mezi ovládadnou hodnotu, další dvě slouží k nastavení požadované hodnoty. Na displeji se zobrazuje současná teplota ovzduší a vlhkost půdy. Uživatel může nastavit požadované hodnoty a dvě LED diody.
 
 ## Ovládání
