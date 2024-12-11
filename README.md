@@ -43,6 +43,11 @@ Analogová klávesnice je kompaktní modul umožňující detekci více tlačít
 
 Klávesnice je ideální pro jednoduchá uživatelská rozhraní v různých projektech. Díky úspoře pinů je vhodná i pro zařízení s omezeným počtem vstupů.
 
+### DHT12
+![dht12](images/dht.png)
+
+DHT12 je digitální senzor pro měření teploty a vlhkosti s podporou I2C rozhraní. Nabízí přesnost ±0,5 °C u teploty a ±5 % u vlhkosti.Pracuje s napětím 2,7–5,5 V a díky I2C šetří piny mikrokontroléru. Je kompatibilní s Arduinem a dalšími platformami, přičemž podporuje i jednožilové datové rozhraní.
+
 
 
 ## Popis software
